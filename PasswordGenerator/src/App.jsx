@@ -11,8 +11,9 @@ function App() {
   const [password,setPassword] = useState("");
 
   const passwordRef = useRef(null)
+
   //useRef is a React hook that allows you to create a mutable object that persists for the full lifetime of the component.
-  //It is often used to access DOM elements directly, without causing re-renders when the
+  //It is often used to access DOM elements directly, without causing re-renders when the reference changes.
 
   const passwordGenerator=useCallback(()=>{
     let pass='';
@@ -94,10 +95,10 @@ function App() {
           <label htmlFor="characterInput">Characters</label>
       </div>
     </div>
-      <div>
+      <div className='flex flex-col items-center justify-center mt-4'>
         <button onClick={()=>window.location.reload()}
-        className='border border-black bg-blue-500 text-white px-4 py-2 rounded-lg mt-4'>
-                Refresh    
+        className='border border-black bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 '>
+                Generate a new passwoword
         </button>
       </div>
 </div>
