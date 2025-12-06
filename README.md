@@ -8,7 +8,7 @@ Each folder is a separate React project focusing on specific concepts.
 ##  Projects Inside
 -  **Password Generator Extension** → A Chrome/Edge extension that generates secure passwords.  
 -  **Background Changer** → Simple app to change background colors dynamically.  
--  
+-  **Currency Converter** 
 
 ---
 

@@ -8,7 +8,6 @@ function App() {
   const [rates, setRates] = useState({});
   const [result, setResult] = useState(null);
 
-  // Fetch exchange rates once on load
   useEffect(() => {
     fetch("https://api.exchangerate-api.com/v4/latest/USD")
       .then((res) => res.json())
@@ -16,7 +15,6 @@ function App() {
       .catch((err) => console.error("Error fetching rates:", err));
   }, []);
 
-  // Auto conversion whenever inputs change
   useEffect(() => {
     if (!rates[fromCurrency] || !rates[toCurrency]) return;
 
@@ -26,15 +24,12 @@ function App() {
 
   return (
     <>
-      {/* Header */}
       <h1 className="bg-blue-500 text-center text-3xl font-bold  p-5 text-white shadow-lg">
          Currency Converter
       </h1>
 
-      {/* Main Card with live conversion on right */}
       <div className="flex flex-row justify-between items-center p-6 max-w-2xl mx-auto mt-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl shadow-xl gap-6">
         
-        {/* Input Section */}
         <div className="flex flex-col space-y-4 w-2/3">
           <InputBox
             label="From"
@@ -53,7 +48,6 @@ function App() {
             onCurrencyChange={setToCurrency}
           />
 
-          {/* Swap Button */}
           <button
             className="mx-auto px-4 py-2 bg-black text-white rounded-full font-semibold shadow hover:bg-blue-800 transition"
             onClick={() => {
@@ -66,7 +60,6 @@ function App() {
           </button>
         </div>
 
-        {/* Live Conversion Result */}
         <div className="w-1/3 text-center">
           {result && (
             <p className="text-lg font-semibold text-gray-700">

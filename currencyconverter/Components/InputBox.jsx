@@ -9,7 +9,6 @@ export default function InputBox({
 }) {
   return (
     <div className="flex items-end justify-between bg-white shadow-md p-4 rounded-lg mb-3 gap-4">
-      {/* Label + Amount stacked */}
       <div className="flex flex-col w-2/3">
         {label && <label className="text-gray-700 font-medium mb-1">{label}</label>}
 
@@ -22,7 +21,6 @@ export default function InputBox({
         />
       </div>
 
-      {/* Currency Dropdown */}
       <div className="flex flex-col w-1/3">
         <label className="text-gray-700 font-medium mb-1">Currency</label>
         <select
