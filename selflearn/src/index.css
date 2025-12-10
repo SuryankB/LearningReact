@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Enable scroll but hide scrollbar */
+html, body {
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html, body {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Internet Explorer */
+html, body {
+  -ms-overflow-style: none;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.layout-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
