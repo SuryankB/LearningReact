@@ -40,7 +40,7 @@ export default function Signup() {
       );
 
       alert("Signup Successful!");
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       alert(error.message);
     }
