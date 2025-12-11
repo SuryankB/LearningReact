@@ -16,7 +16,7 @@ export default function Login() {
       });
 
       alert("Login Successful!");
-      navigate("/home");
+      navigate("/");
     } catch (error) {
       alert(error.message);
     }
