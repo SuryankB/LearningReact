@@ -42,7 +42,7 @@ function Header() {
               isActive ? "font-semibold" : "hover:text-gray-600"
             }
           >
-            MyFav
+            MyLibrary
           </NavLink>
 
           <div className="flex items-center gap-2">
@@ -81,21 +81,7 @@ function Header() {
           </div>
         </div>
 
-        <Link
-          to="/profile"
-          className="
-            px-4
-            py-1.5
-            rounded-full
-            border
-            border-black/20
-            hover:bg-black
-            hover:text-white
-            transition
-          "
-        >
-          Profile
-        </Link>
+        
       </div>
     </nav>
   );

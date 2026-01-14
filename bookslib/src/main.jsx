@@ -4,7 +4,7 @@ import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Home from './Components/Home/Home.jsx'
-import MyFav from './Components/MyFav/MyFav.jsx'
+import MyFav from './Components/MyFav/myfav.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
